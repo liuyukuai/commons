@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.cutefool.commons.orm.mybatis.extensible.autoconfig.MybatisExtensibleAutoConfiguration

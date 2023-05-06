@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"com.cutefool.commons.api","h":"","u":""},{"l":"com.cutefool.commons.api.yapi","h":"","u":""},{"l":"所有程序包","h":"","u":"allpackages-index.html"}]

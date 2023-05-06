@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>commons</artifactId>
+        <groupId>com.cutefool.commons</groupId>
+        <version>4.0.4-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>commons-orm</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>commons-orm-core</module>
+        <module>commons-orm-mongo</module>
+        <module>commons-orm-influx</module>
+        <module>commons-orm-jpa</module>
+        <module>commons-orm-mybatis</module>
+        <module>commons-orm-mybatis-dsl</module>
+        <module>commons-orm-rds</module>
+        <module>commons-orm-rds-cache</module>
+        <module>commons-orm-mybatis-extensible</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.cutefool.commons</groupId>
+            <artifactId>commons-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cutefool.commons</groupId>
+            <artifactId>commons-expression</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>joor-java-8</artifactId>
+            <version>0.9.14</version>
+        </dependency>
+    </dependencies>
+</project>

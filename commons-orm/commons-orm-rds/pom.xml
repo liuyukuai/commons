@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>commons-orm</artifactId>
+        <groupId>com.cutefool.commons</groupId>
+        <version>4.0.4-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>commons-orm-rds</artifactId>
+    <packaging>jar</packaging>
+
+    <name>commons-orm-rds</name>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.cutefool.commons</groupId>
+            <artifactId>commons-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cutefool.commons</groupId>
+            <artifactId>commons-orm-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cutefool.commons</groupId>
+            <artifactId>commons-flyway</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cutefool.commons</groupId>
+            <artifactId>commons-cache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cutefool.commons</groupId>
+            <artifactId>commons-db-dm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.dameng</groupId>
+            <artifactId>DmJdbcDriver18</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
+</project>

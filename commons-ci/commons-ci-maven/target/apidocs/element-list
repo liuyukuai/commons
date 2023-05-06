@@ -1,0 +1,6 @@
+com.cutefool.commons.ci.maven
+com.cutefool.commons.ci.maven.command
+com.cutefool.commons.ci.maven.command.release
+com.cutefool.commons.ci.maven.context
+com.cutefool.commons.ci.maven.executing
+com.cutefool.commons.ci.maven.libs

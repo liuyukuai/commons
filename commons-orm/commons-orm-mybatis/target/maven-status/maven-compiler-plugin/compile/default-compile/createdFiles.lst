@@ -1,0 +1,16 @@
+com/cutefool/commons/mybatis/Condition.class
+com/cutefool/commons/mybatis/IBaseMapper.class
+com/cutefool/commons/mybatis/IExample$1.class
+com/cutefool/commons/mybatis/MysqlColumn.class
+com/cutefool/commons/mybatis/support/BaseMybatisService.class
+com/cutefool/commons/mybatis/IBaseSpecificationService.class
+com/cutefool/commons/mybatis/support/BaseIdWorkerService.class
+com/cutefool/commons/mybatis/IExampleSpecificationGetter.class
+com/cutefool/commons/mybatis/Queryalbe.class
+com/cutefool/commons/mybatis/IBaseService.class
+com/cutefool/commons/mybatis/IdWorkerService.class
+com/cutefool/commons/mybatis/Criterion.class
+com/cutefool/commons/mybatis/support/BaseSpecificationMybatisService.class
+com/cutefool/commons/mybatis/IExample.class
+com/cutefool/commons/mybatis/PageRequest.class
+com/cutefool/commons/mybatis/IExampleGetter.class

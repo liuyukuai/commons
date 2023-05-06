@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.jodconverter.boot.autoconfigure.JodConverterLocalAutoConfiguration,\
+org.jodconverter.boot.autoconfigure.JodConverterRemoteAutoConfiguration

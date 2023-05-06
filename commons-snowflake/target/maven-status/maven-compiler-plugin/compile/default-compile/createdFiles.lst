@@ -1,0 +1,4 @@
+META-INF/spring-configuration-metadata.json
+com/cutefool/commons/snowflake/IdWorkerConfiguration.class
+com/cutefool/commons/snowflake/IdWorkerProperties.class
+com/cutefool/commons/snowflake/IdWorker.class

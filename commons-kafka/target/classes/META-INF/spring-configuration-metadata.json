@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "commons.kafka",
+      "type": "com.cutefool.commons.kafka.CommonsKafkaProperties",
+      "sourceType": "com.cutefool.commons.kafka.CommonsKafkaProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "commons.kafka.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.cutefool.commons.kafka.CommonsKafkaProperties"
+    }
+  ],
+  "hints": []
+}

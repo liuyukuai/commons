@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.cutefool.commons.sms.SmsService,\
+unicom.com.cutefool.commons.sms.WoSmsConfig,\
+com.cutefool.commons.sms.unicom.WoSmsService,\
+com.cutefool.commons.sms.cl253.ClSmsService,\
+com.cutefool.commons.sms.cl253.ClSmsConfig,\
+com.cutefool.commons.sms.lib.SmsValidate,\
+com.cutefool.commons.sms.lib.SmsConfig

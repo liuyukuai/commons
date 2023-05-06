@@ -1,0 +1,15 @@
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/CiConsumer.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/CiContext.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/CiContextFactory.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/CiDeployContext.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/Dependency.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/Versioning.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/Executor.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/CiConfigurable.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/CiShellContext.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/CiReleaseContext.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/CiConstants.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/CiConfig.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/Executing.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/Identifier.java
+/Users/liuyukuai/develop/me/commons/commons-ci/commons-ci-core/src/main/java/com/cutefool/commons/ci/core/Identifying.java

@@ -1,0 +1,26 @@
+{
+  "groups": [
+    {
+      "name": "commons.snowflake",
+      "type": "com.cutefool.commons.snowflake.IdWorkerProperties",
+      "sourceType": "com.cutefool.commons.snowflake.IdWorkerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "commons.snowflake.data-center-id",
+      "type": "java.lang.Long",
+      "description": "当前数据中心编号,默认0-31",
+      "sourceType": "com.cutefool.commons.snowflake.IdWorkerProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "commons.snowflake.worker-id",
+      "type": "java.lang.Long",
+      "description": "当前机器编号，默认0-31",
+      "sourceType": "com.cutefool.commons.snowflake.IdWorkerProperties",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

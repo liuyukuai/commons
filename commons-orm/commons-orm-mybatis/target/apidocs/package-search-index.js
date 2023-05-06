@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"com.cutefool.commons.mybatis","h":"","u":""},{"l":"com.cutefool.commons.mybatis.support","h":"","u":""},{"l":"所有程序包","h":"","u":"allpackages-index.html"}]

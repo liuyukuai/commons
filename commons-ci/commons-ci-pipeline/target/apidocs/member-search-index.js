@@ -1,0 +1,1 @@
+memberSearchIndex = [{"l":"deploy(T)","h":"","u":""},{"l":"identifier(T)","h":"","u":""},{"l":"release(T, BiConsumer<T, Response<Boolean>>)","h":"","u":"release(T,java.util.function.BiConsumer)"},{"l":"release(T)","h":"","u":""},{"l":"version(T)","h":"","u":""},{"l":"versioning(T, List<Dependency>)","h":"","u":"versioning(T,java.util.List)"}]

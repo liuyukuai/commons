@@ -1,0 +1,3 @@
+com/cutefool/commons/orm/rds/cache/context/RdsContext.class
+com/cutefool/commons/orm/rds/cache/autoconfigure/RdsCacheAutoConfiguration.class
+com/cutefool/commons/orm/rds/cache/RdsCache.class

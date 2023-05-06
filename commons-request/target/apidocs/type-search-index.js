@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"DataTransferInterceptor","h":"","u":""},{"l":"RequestConfig","h":"","u":""},{"l":"RequestProperties","h":"","u":""},{"l":"WebUtils","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]

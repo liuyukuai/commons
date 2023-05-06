@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "commons.request",
+      "type": "com.cutefool.commons.request.RequestProperties",
+      "sourceType": "com.cutefool.commons.request.RequestProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "commons.request.allow-header",
+      "type": "java.lang.String",
+      "description": "请求后台允许传递的头信息，逗号隔开",
+      "sourceType": "com.cutefool.commons.request.RequestProperties"
+    }
+  ],
+  "hints": []
+}

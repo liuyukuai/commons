@@ -1,0 +1,60 @@
+{
+  "groups": [
+    {
+      "name": "commons.request.mock",
+      "type": "com.cutefool.commons.mock.MockProperties",
+      "sourceType": "com.cutefool.commons.mock.MockProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "commons.request.mock.address",
+      "type": "java.lang.String",
+      "description": "mockServer的地址",
+      "sourceType": "com.cutefool.commons.mock.MockProperties"
+    },
+    {
+      "name": "commons.request.mock.department",
+      "type": "java.lang.String",
+      "description": "department",
+      "sourceType": "com.cutefool.commons.mock.MockProperties"
+    },
+    {
+      "name": "commons.request.mock.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用mock，默认为false，不启用",
+      "sourceType": "com.cutefool.commons.mock.MockProperties"
+    },
+    {
+      "name": "commons.request.mock.org-code",
+      "type": "java.lang.String",
+      "description": "是否启用mock，默认为false，不启用",
+      "sourceType": "com.cutefool.commons.mock.MockProperties"
+    },
+    {
+      "name": "commons.request.mock.positions",
+      "type": "java.lang.String",
+      "description": "positions",
+      "sourceType": "com.cutefool.commons.mock.MockProperties"
+    },
+    {
+      "name": "commons.request.mock.tenant-id",
+      "type": "java.lang.Long",
+      "description": "租户",
+      "sourceType": "com.cutefool.commons.mock.MockProperties"
+    },
+    {
+      "name": "commons.request.mock.user-id",
+      "type": "java.lang.Long",
+      "description": "是否启用mock，默认为false，不启用",
+      "sourceType": "com.cutefool.commons.mock.MockProperties"
+    },
+    {
+      "name": "commons.request.mock.user-type",
+      "type": "java.lang.Byte",
+      "description": "用户类型【0:普通用户，1:超级管理员，2:子系统管理员】",
+      "sourceType": "com.cutefool.commons.mock.MockProperties"
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <!--设置上下文名称,每个logger都关联到logger上下文。一旦设置，不能修改。-->
+    <contextName>myAppName</contextName>
+
+    <!--用来定义变量值，它有两个属性name和value，通过<property>定义的值会被插入到logger上下文中，可以使“${}”来使用变量。-->
+    <springProperty scope="context" name="LOG_HOME" source="logging.path" defaultValue="/opt/logs"/>
+    <springProperty scope="context" name="application" source="spring.application.name"/>
+
+    <!--获取时间戳字符串-->
+    <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+
+    <!--把日志输出到控制台-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%p] --- [%+5t] %-40logger{36} : %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- trace日志 -->
+    <appender name="RollingFileTrace" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <file>${LOG_HOME}/${application}/trace.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 只接受trace级别的日志，因为logback有严格的日志区分，所以某一个分类的日志只包括该类型的日志 -->
+            <level>TRACE</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${application}/trace_%d{yyyy-MM-dd-HH}-%i.log.zip</fileNamePattern>
+            <!-- 单个文件大小 -->
+            <maxFileSize>10 MB</maxFileSize>
+            <!--fileNamePattern的格式为yyyy-MM-dd-HH,则日志回收时间也应该与fileNamePattern相同 -->
+            <maxHistory>168</maxHistory>
+            <!--总得文件日志-->
+            <totalSizeCap>10GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%p] --- [%+5t] %-40logger{36} : %m%n</pattern>
+            <!--设置日志编码为utf-8-->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- debug日志 -->
+    <appender name="RollingFileDebug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <file>${LOG_HOME}/${application}/debug.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${application}/debug_%d{yyyy-MM-dd-HH}-%i.log.zip</fileNamePattern>
+            <!-- 单个文件大小 -->
+            <maxFileSize>10 MB</maxFileSize>
+            <!--fileNamePattern的格式为yyyy-MM-dd-HH,则日志回收时间也应该与fileNamePattern相同 -->
+            <maxHistory>168</maxHistory>
+            <!--总得文件日志-->
+            <totalSizeCap>10GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%p] --- [%+5t] %-40logger{36} : %m%n</pattern>
+            <!--设置日志编码为utf-8-->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- info日志 -->
+    <appender name="RollingFileInfo" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <file>${LOG_HOME}/${application}/info.log</file>
+        <!-- 只要info的日志的配置 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${application}/info_%d{yyyy-MM-dd-HH}-%i.log.zip</fileNamePattern>
+            <!-- 单个文件大小 -->
+            <maxFileSize>10 MB</maxFileSize>
+            <!--fileNamePattern的格式为yyyy-MM-dd-HH,则日志回收时间也应该与fileNamePattern相同 -->
+            <maxHistory>168</maxHistory>
+            <!--总得文件日志-->
+            <totalSizeCap>10GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%p] --- [%+5t] %-40logger{36} : %m%n</pattern>
+            <!--设置日志编码为utf-8-->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- warn日志 -->
+    <appender name="RollingFileWarn" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <file>${LOG_HOME}/${application}/warn.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${application}/warn_%d{yyyy-MM-dd-HH}-%i.log.zip</fileNamePattern>
+            <!-- 单个文件大小 -->
+            <maxFileSize>10 MB</maxFileSize>
+            <!--fileNamePattern的格式为yyyy-MM-dd-HH,则日志回收时间也应该与fileNamePattern相同 -->
+            <maxHistory>168</maxHistory>
+            <!--总得文件日志-->
+            <totalSizeCap>10GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%p] --- [%+5t] %-40logger{36} : %m%n</pattern>
+            <!--设置日志编码为utf-8-->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- error日志 -->
+    <appender name="RollingFileError" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <file>${LOG_HOME}/${application}/error.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${application}/error_%d{yyyy-MM-dd-HH}-%i.log.zip</fileNamePattern>
+            <!-- 单个文件大小 -->
+            <maxFileSize>10 MB</maxFileSize>
+            <!--fileNamePattern的格式为yyyy-MM-dd-HH,则日志回收时间也应该与fileNamePattern相同 -->
+            <maxHistory>168</maxHistory>
+            <!--总得文件日志-->
+            <totalSizeCap>10GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%p] --- [%+5t] %-40logger{36} : %m%n</pattern>
+            <!--设置日志编码为utf-8-->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!-- app应用日志 -->
+    <appender name="RollingFileApp" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <file>${LOG_HOME}/${application}/app.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${application}/app_%d{yyyy-MM-dd-HH}-%i.log.zip</fileNamePattern>
+            <!-- 单个文件大小 -->
+            <maxFileSize>10 MB</maxFileSize>
+            <!--fileNamePattern的格式为yyyy-MM-dd-HH,则日志回收时间也应该与fileNamePattern相同 -->
+            <maxHistory>168</maxHistory>
+            <!--总得文件日志-->
+            <totalSizeCap>10GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss:SSS} [%p] --- [%+5t] %-40logger{36} : %m%n</pattern>
+            <!--设置日志编码为utf-8-->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <logger name="org.springframework" level="info"/>
+    <!--使用日志继承属性 addtivity="false" -->
+    <logger name="com.javanorth" level="all" addtivity="true"/>
+
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="RollingFileTrace"/>
+        <appender-ref ref="RollingFileDebug"/>
+        <appender-ref ref="RollingFileInfo"/>
+        <appender-ref ref="RollingFileWarn"/>
+        <appender-ref ref="RollingFileError"/>
+        <appender-ref ref="RollingFileApp"/>
+    </root>
+
+</configuration>

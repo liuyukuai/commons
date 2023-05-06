@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.cutefool.commons.orm.rds.autoconfigure.RdsMetaAutoConfiguration
+
