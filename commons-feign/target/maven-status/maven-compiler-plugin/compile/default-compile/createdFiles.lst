@@ -1,5 +1,0 @@
-META-INF/spring-configuration-metadata.json
-com/cutefool/commons/feign/DevServiceInstanceListSupplier.class
-com/cutefool/commons/feign/DevAutoConfiguration.class
-com/cutefool/commons/feign/DevRuleProperties.class
-com/cutefool/commons/feign/DevRuleConfig.class

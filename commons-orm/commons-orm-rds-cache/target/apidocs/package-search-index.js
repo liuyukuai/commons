@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"com.cutefool.commons.orm.rds.cache","h":"","u":""},{"l":"com.cutefool.commons.orm.rds.cache.autoconfigure","h":"","u":""},{"l":"com.cutefool.commons.orm.rds.cache.context","h":"","u":""},{"l":"所有程序包","h":"","u":"allpackages-index.html"}]

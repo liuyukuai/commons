@@ -1,1 +1,0 @@
-memberSearchIndex = [{"l":"MockProperties()","h":"","u":"%3Cinit%3E()"}]

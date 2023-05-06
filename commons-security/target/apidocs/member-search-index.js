@@ -1,1 +1,0 @@
-memberSearchIndex = [{"l":"addCorsMappings(CorsRegistry)","h":"","u":"addCorsMappings(org.springframework.web.servlet.config.annotation.CorsRegistry)"},{"l":"CrossOriginConfig()","h":"","u":"%3Cinit%3E()"},{"l":"SecurityProperties()","h":"","u":"%3Cinit%3E()"}]

@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"com.cutefool.commons.config.apollo","h":"","u":""},{"l":"com.cutefool.commons.config.apollo.constant","h":"","u":""},{"l":"com.cutefool.commons.config.apollo.internals","h":"","u":""},{"l":"所有程序包","h":"","u":"allpackages-index.html"}]

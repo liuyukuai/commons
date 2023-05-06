@@ -1,1 +1,0 @@
-memberSearchIndex = [{"l":"idWorker()","h":"","u":""},{"l":"IdWorker(long, long)","h":"","u":"%3Cinit%3E(long,long)"},{"l":"IdWorkerConfiguration()","h":"","u":"%3Cinit%3E()"},{"l":"IdWorkerProperties()","h":"","u":"%3Cinit%3E()"},{"l":"nextId()","h":"","u":""}]

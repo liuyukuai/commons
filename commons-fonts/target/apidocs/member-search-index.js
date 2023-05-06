@@ -1,1 +1,0 @@
-memberSearchIndex = [{"l":"Fonts()","h":"","u":"%3Cinit%3E()"},{"l":"load(String, int, int)","h":"","u":"load(java.lang.String,int,int)"},{"l":"load(String, int)","h":"","u":"load(java.lang.String,int)"}]

@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"com.cutefool.commons.redis","h":"","u":""},{"l":"com.cutefool.commons.redis.id","h":"","u":""},{"l":"com.cutefool.commons.redis.sentinel","h":"","u":""},{"l":"所有程序包","h":"","u":"allpackages-index.html"}]

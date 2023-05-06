@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"LogoConfig","h":"","u":""},{"l":"Pictures","h":"","u":""},{"l":"QrCodeConfig","h":"","u":""},{"l":"QrCodeConstants","h":"","u":""},{"l":"QrCodes","h":"","u":""},{"l":"WordConfig","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]

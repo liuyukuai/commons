@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"RdsCache","h":"","u":""},{"l":"RdsCacheAutoConfiguration","h":"","u":""},{"l":"RdsContext","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]

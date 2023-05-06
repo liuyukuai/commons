@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"DevAutoConfiguration","h":"","u":""},{"l":"DevRuleConfig","h":"","u":""},{"l":"DevRuleProperties","h":"","u":""},{"l":"DevServiceInstanceListSupplier","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]

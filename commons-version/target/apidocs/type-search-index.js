@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"Version","h":"","u":""},{"l":"VersionInstance","h":"","u":""},{"l":"VersionRules","h":"","u":""},{"l":"VersionRulesLibs","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]

@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.cutefool.commons.jwt.JwtConfiguration,\
-com.cutefool.commons.jwt.JwtProperties

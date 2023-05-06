@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"ConfigConstants","h":"","u":""},{"l":"ConfigContextInitializer","h":"","u":""},{"l":"ConfigDefaultInitializer","h":"","u":""},{"l":"MetaAddressProvider","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]

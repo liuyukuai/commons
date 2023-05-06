@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"Testable","h":"","u":""},{"l":"TestableContext","h":"","u":""},{"l":"Tests","h":"","u":""},{"l":"TestsConfig","h":"","u":""},{"l":"TestSuppliers","h":"","u":""},{"l":"所有类","h":"","u":"allclasses-index.html"}]
